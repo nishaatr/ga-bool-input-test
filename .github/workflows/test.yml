@@ -1,6 +1,11 @@
 name: Test github action bool inputs
 
 on:
+  push:
+    branches:
+      - "!*"
+    tags:
+      - "v5.*"
   workflow_call:
     inputs:
       passed_true:
